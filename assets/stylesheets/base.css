@@ -82,6 +82,12 @@ h6 {
 section {
     padding: 1em 0;
 }
+
+section.image-wrapper >img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 p {
     margin: 0 0 1em;
     line-height: 1.4285em;
@@ -279,11 +285,13 @@ article {
     }
 }
 @media only screen and (max-width: 767px) {
-    .page,
-    .page[style^="border-color"] {
+    .page{
         padding: 0;
     }
-    .page[style^="border-color"]:before {
+    .page:before {
+        display: none;
+    }
+    section.image-wrapper{
         display: none;
     }
 }
@@ -769,8 +777,7 @@ li.bordered > ul > details > div {
 
 /* Print */
 @media print {
-    .page,
-    .page[style] {
+    .page {
         padding: 0;
         box-shadow: none;
         border-color: transparent !important;
