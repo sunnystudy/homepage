@@ -30,16 +30,20 @@ self.__precacheManifest = [
     "revision": "3ee4c9d1ccb37a2639a7a797ec551826"
   },
   {
+    "url": "assets/images/shekel-avatar-min.jpg",
+    "revision": "4a0a479a531adee875add2ad6c649814"
+  },
+  {
     "url": "assets/stylesheets/base.css",
-    "revision": "8a13632a1f8c66531fbc91f7be24b4a9"
+    "revision": "1d0ed02d99934b705ec7002f2e7ce90b"
   },
   {
     "url": "index.html",
-    "revision": "bd8c27f4f1d1ff1666ae8b8ac385e5fc"
+    "revision": "ce65f293f0149daceef6fb3637a09405"
   },
   {
     "url": "uk-ua/index.html",
-    "revision": "7f663f179057073a3560c9073ad0d077"
+    "revision": "405da4cedf99f13512ba2591b36ea129"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
