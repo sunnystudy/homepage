@@ -82,6 +82,12 @@ h6 {
 section {
     padding: 1em 0;
 }
+
+section.image-wrapper >img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 p {
     margin: 0 0 1em;
     line-height: 1.4285em;
@@ -283,6 +289,9 @@ article {
         padding: 0;
     }
     .page:before {
+        display: none;
+    }
+    section.image-wrapper{
         display: none;
     }
 }

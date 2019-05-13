@@ -65,7 +65,7 @@
                         <div class="fat divider"></div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="secondary_info">
                     <div class="ten wide column">
                         <h3>Досвід</h3>
                         <h6>Тепер</h6>
@@ -178,11 +178,29 @@
                             <h3>Не подобається &#x1f61e;</h3>
                             <p class="tags small">гості, незнайомі люди, пташки, закриті двері, ветеринари</p>
                         </section>
+                        <section class="image-wrapper">
+                            <img src="assets/images/shekel-avatar-min.jpg" alt="tongue" id="awesome" class="animated"/>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
     </article>
 </main>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+<script>
+    const secondaryInfoBlock = document.getElementById('secondary_info');
+
+    const secondaryInfoBlockTop = secondaryInfoBlock.offsetTop;
+    const awesome = document.getElementById("awesome");
+
+    window.onscroll = function() {
+        if (window.pageYOffset >= secondaryInfoBlockTop && awesome.classList.contains('animated') && window.matchMedia("(min-width: 768px)").matches) {
+            TweenLite.from(awesome, 3, {opacity:0, bottom:"-500px"});
+            awesome.classList.remove('animated');
+        }
+    };
+</script>
 </body>
 </html>
