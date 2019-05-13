@@ -27,15 +27,19 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "assets/images/avatar-shekel.svg",
-    "revision": "65af28204b3e7e2fc7f0ae8637750f50"
+    "revision": "3ee4c9d1ccb37a2639a7a797ec551826"
   },
   {
     "url": "assets/stylesheets/base.css",
-    "revision": "b0c20f5c691e0442f81b47b60a708897"
+    "revision": "8a13632a1f8c66531fbc91f7be24b4a9"
   },
   {
     "url": "index.html",
-    "revision": "79467a4277ad532581b0bcbd7668856d"
+    "revision": "bd8c27f4f1d1ff1666ae8b8ac385e5fc"
+  },
+  {
+    "url": "uk-ua/index.html",
+    "revision": "7f663f179057073a3560c9073ad0d077"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

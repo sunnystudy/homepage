@@ -279,11 +279,10 @@ article {
     }
 }
 @media only screen and (max-width: 767px) {
-    .page,
-    .page[style^="border-color"] {
+    .page{
         padding: 0;
     }
-    .page[style^="border-color"]:before {
+    .page:before {
         display: none;
     }
 }
@@ -769,8 +768,7 @@ li.bordered > ul > details > div {
 
 /* Print */
 @media print {
-    .page,
-    .page[style] {
+    .page {
         padding: 0;
         box-shadow: none;
         border-color: transparent !important;
